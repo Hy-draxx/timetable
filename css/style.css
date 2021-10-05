@@ -1,0 +1,97 @@
+#l01{
+  min-height: 800px;
+}
+#lll{
+  text-align: center;
+    padding-top: 170px;
+}
+
+.h33{
+  text-align: center;
+    padding-top: 50px;
+}
+.h34{
+  text-align: center;
+  padding-bottom: 20px;
+}
+span{
+  color: #f4511e;
+}
+
+
+.mm{
+  padding-top: 10px;
+}
+
+
+html {
+scroll-behavior: smooth;
+}
+
+.molll{
+  font-weight: bold;
+  font-style: italic;
+  font: alegreya;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+#sidenav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 120vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 996;
+  will-change: opacity;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 600px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+

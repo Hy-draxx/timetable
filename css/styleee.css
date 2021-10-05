@@ -1,0 +1,281 @@
+    #gallery {
+      line-height:0;
+      -webkit-column-count:5; /* split it into 5 columns */
+      -webkit-column-gap:5px; /* give it a 5px gap between columns */
+      -moz-column-count:5;
+      -moz-column-gap:5px;
+      column-count:5;
+      column-gap:5px;
+   }  
+   #gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom:5px; /* to match column gap */
+ }
+ @media (max-width: 1200px) {
+  #gallery {
+   -moz-column-count:    4;
+   -webkit-column-count: 4;
+   column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #gallery {
+   -moz-column-count:    3;
+   -webkit-column-count: 3;
+   column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #gallery {
+   -moz-column-count:    2;
+   -webkit-column-count: 2;
+   column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #gallery {
+   -moz-column-count:    1;
+   -webkit-column-count: 1;
+   column-count:         1;
+  }
+}
+#gallery img:hover {
+  filter:none;
+}
+#gallery img {
+  filter: grayscale(100%);
+  transition: filter 2s;
+}
+
+
+.xxx{
+  padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activee {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-containers {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.texts {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertexts {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dots {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.actives {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fades {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fades {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fades {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .texts {font-size: 11px}
+}
+
+
+/* Mail */
+
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+font-family: inherit;
+font-size: 100%;
+color: inherit;
+border: none;
+border-radius: 0;
+display: block;
+width: 100%;
+padding: 0;
+margin: 0;
+-webkit-appearance: none;
+-moz-appearance: none;
+}
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+font-size: .825rem;
+margin-bottom: .5rem;
+padding-top: .2rem;
+display: flex;
+align-items: baseline;
+}
+
+/* border, padding, margin, width */
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+border: 1px solid rgba(0,0,0,0.2);
+
+padding: .75em 1rem;
+margin-bottom: 1.5rem;
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+background-color: white;
+outline-style: solid;
+outline-width: thin;
+outline-color: gray;
+outline-offset: -1px;
+}
+#fs-frm [type="text"],
+#fs-frm [type="email"] {
+width: 100%;
+}
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+width: auto;
+cursor: pointer;
+-webkit-appearance: button;
+-moz-appearance: button;
+appearance: button;
+}
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+outline: none;
+}
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+margin-bottom: 0;
+}
+
+.frmm{
+  padding-bottom: 40px;
+}
+
+
